@@ -7,12 +7,12 @@ def ler_valores():
         valores.append(valor)
     return valores
 
-def exibir_tabela(valores):
+def exibir_valores(valores):
     tabela = PrettyTable()
-    tabela.field_names = ['Valores lidos:']
-    for valor in reversed(valores):
+    tabela.field_names = ['Valores lidos']
+    for valor in valores:
         tabela.add_row([valor])
     print(tabela)
 
 valores = ler_valores()
-exibir_tabela(valores)
+exibir_valores(valores)
